@@ -1,11 +1,78 @@
 <!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 	<head>
-		<title>Galerie</title>
+		<title>Elements Reference - Massively by HTML5 UP</title>
+		<style>
+			/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Wrapper : Centrage du contenu */
+#wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Texte */
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* Images responsives */
+.image.fit img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Grille pour les images */
+.box.alt .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Flexbox pour les informations de contact */
+.split.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.split.contact section {
+    flex: 1 1 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Media Queries pour écrans plus petits */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .split.contact {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+		</style>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="Style.css" />
+		<link rel="stylesheet" href="" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -35,7 +102,7 @@
 									<h2>Image</h2>
 
 									<h3>Fit</h3>
-									
+									<span class="image fit"><img src="images/5.jpeg" alt="" /></span>
 									<div class="box alt">
 										<div class="row gtr-50 gtr-uniform">
 											<div class="col-4"><span class="image fit"><img src="images/1.jpeg" alt="" /></span></div>
