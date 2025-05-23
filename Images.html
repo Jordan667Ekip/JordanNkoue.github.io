@@ -7,6 +7,70 @@
 <html>
 	<head>
 		<title>Galerie</title>
+		<style>
+			/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Wrapper : Centrage du contenu */
+#wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Texte */
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* Images responsives */
+.image.fit img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Grille pour les images */
+.box.alt .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Flexbox pour les informations de contact */
+.split.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.split.contact section {
+    flex: 1 1 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Media Queries pour écrans plus petits */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .split.contact {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+			
+		</style>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
