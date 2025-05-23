@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+	<style>
+	/* Styles généraux */
+	body {
+		font-family: 'Poppins', sans-serif;
+		margin: 0;
+		padding: 0;
+		background-color: #f4f4f4;
+		color: #333;
+	}
+	
+	/* En-tête */
+	header {
+		background: linear-gradient(135deg, black, #00d4ff);
+		color: white;
+		text-align: center;
+		padding: 40px 20px;
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+	}
+	
+	nav ul {
+		list-style: none;
+		padding: 0;
+		text-align: center;
+	}
+	
+	nav ul li {
+		display: inline;
+		margin: 0 15px;
+	}
+	
+	nav ul li a {
+		text-decoration: none;
+		color: white;
+		font-weight: bold;
+		transition: color 0.3s ease-in-out;
+	}
+	
+	nav ul li a:hover {
+		color: #f4f4f4;
+	}
+	
+	ul {
+    list-style-type: none; /* Supprime les puces */
+    padding: 0; /* Supprime l’espace intérieur */
+    margin: 0; /* Supprime la marge externe */
+}
+
+	/* Sections */
+	section {
+		padding: 50px 20px;
+		text-align: center;
+	}
+	
+	/* Grille des projets */
+	.grid-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 20px;
+		padding: 20px;
+	}
+	
+	/* Projets */
+	.project {
+		background: white;
+		border-radius: 8px;
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+		padding: 20px;
+		transition: transform 0.3s ease-in-out;
+	}
+	
+	.project img {
+		width: 100%;
+		border-radius: 8px;
+	}
+	
+	.project:hover {
+		transform: scale(1.05);
+	}
+	
+	/* Formulaire de contact */
+	form {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		margin: auto;
+		background: white;
+		padding: 20px;
+		border-radius: 8px;
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	}
+	
+	form label {
+		font-weight: bold;
+		margin-top: 10px;
+	}
+	
+	form input, form textarea {
+		width: 100%;
+		padding: 10px;
+		margin-top: 5px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+	}
+	
+	form button {
+		background: #007bff;
+		color: white;
+		padding: 10px;
+		border: none;
+		border-radius: 5px;
+		margin-top: 15px;
+		cursor: pointer;
+		transition: background 0.3s ease-in-out;
+	}
+	
+	form button:hover {
+		background: #0056b3;
+	}
+	
+	/* Pied de page */
+	footer {
+		background: black;
+		color: white;
+		text-align: center;
+		padding: 20px;
+	}
+	
+	/* Media Queries */
+	@media (max-width: 600px) {
+		.grid-container {
+			grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		}
+	
+		form {
+			width: 80%;
+		}
+	}
+	</style>
+</head>
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <h1>Bienvenue sur mon portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="Tpe 152.html">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section À propos -->
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <p>Je suis un étudiante passionné par le développement web et les nouvelles technologies. Voici mon parcours académique et quelques projets que j'ai réalisés.</p>
+		<br>
+		<div class="section education">
+            <h2>Parcours académique</h2>
+            <ul>
+                <li><strong>CEP</strong> - École Primaire Du Génie Militaire (2017)</li>
+                <li><strong>BEPC</strong> - Lycée Bilingue Du Génie Militaire (2021)</li>
+                <li><strong>Probatoire</strong> - Lycée Bilingue Du Génie Militaire (2023)</li>
+                <li><strong>BAC</strong> - Lycée Bilingue Du Génie Militaire (2024)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section Portfolio -->
+    <section id="projects">
+        <h2>Mes projets</h2>
+        <div class="grid-container">
+            <div class="project">
+                <a HREF="122.hs"><img src="iStock.jpg" alt="Projet 1"></a>
+                <p>Projet Haskell - Algorithmes avancés</p>
+            </div>
+            <div class="project">
+                <a href="Images.html"><img src="Projet.jpg" alt="Projet 2"></a>
+                <p>Design Responsive & Intégration Web</p>
+            </div>
+			<div class="project">
+                <a href="Connexion.html"><img src="Projet.jpg" alt="Projet 2"></a>
+                <p>Formulaire de connexion web</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+		<p>jordannkue7@gmail.com</p>
+        <p>+237 657634925</p>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2025 Jordan Nk | Mon Portfolio</p>
+    </footer>
+
+</body>
+</html>
