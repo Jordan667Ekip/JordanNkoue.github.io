@@ -2,6 +2,134 @@
 <html>
     <head>
         <title>Formulaire</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+body {
+       background: url(Images/1.jpeg);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 100vh;
+       background-position: center;
+}
+
+section h1 {
+             color: white;
+             margin-bottom: 20px;
+             margin-top: 10px;
+             text-align: center;
+}
+
+section{
+         background-color: transparent;
+         backdrop-filter: blur(20px);
+         border: 2px solid transparent;
+         margin: 0 auto;
+         padding: 20px;
+         border-radius: 20px;
+         
+}
+
+.input-box {
+             width: 100%;
+             position: relative;
+             margin-bottom: 10px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border-radius: 25px;
+    border-bottom: 3px dashed white;
+    outline: 1px solid black;
+    font-size: 18px;
+    color: white;
+    letter-spacing: 1px; 
+    padding-right: 50px;
+
+}
+div {
+    text-align: center;
+}
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    color: white;
+}
+
+.forgot-password {
+                   display: flex;
+                   justify-content: space-between;
+                   align-items: 14px;
+                   font-size: 14px;
+                   color: white;
+}
+.forgot-password a {
+                   color: blue;
+                   text-decoration: none;
+                   transition: 0.5s;
+                   font-size: 15px;
+                   font-weight: bold;
+                   transition: 0.5s;
+}
+
+.forgot-password:hover {
+                  text-decoration: dashed underline blue;
+
+}
+
+.register a {
+    color: blue;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.register a:hover {
+   text-decoration: dashed underline blue;
+
+}
+
+.button {
+          width: 100%;
+          padding: 15px;
+          border-radius: 25px;
+          font-weight: bold;
+          border: 0;
+          outline: none;
+          font-size: 15px;
+          cursor: pointer;
+          transition: 0.5s;
+
+}
+.button:hover {
+               background-color: transparent;
+               border: 2px dashed blue;
+               color: white;
+
+
+}
+.social-login a {
+    text-decoration: none;
+}
+
+
+
+            
+        </style>
         <meta charset="utf-8">
         <link rel="stylesheet" href="Style 2.css">
         <script src="https://kit.fontawesome.com/f6c86d60b4.js"
